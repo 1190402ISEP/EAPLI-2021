@@ -1,0 +1,59 @@
+1) O maven é uma ferramenta que automatiza os processos de compilação.
+
+2) POM (Project Object Model) é a unidade fundamental de trabalho do maven.
+É um ficheiro XML que contém informação acerca do projeto e detalhes de configuração utilizados pelo Maven para construir o projeto.
+
+3) Distributed Version Control System (DVCS) é um tipo de controlo de versões onde o código base completo 
+, inclusivé todo histórico das versões, é espelhado no computador de todos os developer's. 
+	Mudanças nos ficheiros são monitorizadas entre computadores e no início é requerido
+	estratégias de coordenação específicas para manter a consistência nos projetos,
+	para que todos os developers devem manter-se a par do que está a acontecer aos ficheiros a qualquer momento.
+
+ Vantagens:
+	A ramificação (branching) e junção (merging) podem acontecer automaticamente e rapidamente;
+	Developers têm a habilidade de trabalhar offline;
+	Múltiplas cópias do software eliminam a dependência num único backup;
+	
+4)
+	a) Repositório Remoto - repositório existente numa cloud onde se encontra a informação de todo o projeto até ao último push.
+	   Área de trabalho -	computador pessoal onde se desenvolve o trabalho a submeter.
+	   Repositório Local -  repositório localizado no computador pessoal, onde se encontra todo o trabalho realizado, clonado da cloud 
+							e que se irá submeter.
+							
+							
+	b) 	Staged (Indexed) Files - ficheiros trabalhados mas que ainda não sofreram commit
+	    Committed Files - ficheiros que foram submetidos para serem partilhados no repositório remoto através da operação push
+		
+	c) Clone, Push, Pull=Fetch+Merge
+	
+		Não concordo com a seguinte afirmação, pois é obrigatório dar update através do pull antes de submeter quaisquer ficheiros.
+		Para além disso, a operação clone copia tudo o que existe, à semelhança do fetch, mas a operação merge apenas
+		é resultado dum commit e dum push, sendo que junta dois ou mais ramos num só.
+		
+5)  .gitignore informa o git quais arquivos deve ignorar.
+
+6) O clone de um repositório consiste em copiar todos os dados do repositório remoto para o repositório local.
+
+7) O fork é um clone em que se utiliza o projeto de outro developer como base para o nosso ou se pretende contribuir no projeto
+de outro developer.
+
+8) Fast-Forward: O developer trabalhou no ramo principal (Head) e deu commit e push primeiramente para o mesmo, tendo obtido sucesso, 
+				pois não misturou o seu trabalho com outros ramos, evitando assim o conflito de ramos.
+
+   Non Fast-Forward: O developer trabalhou também no ramo principal, mas como deu push por último de commits que eram 
+   diferentes do ramo principal, foi assumido que se encontrava noutro ramo, tendo dado conflito quando executou o push, 
+   sendo assim obrigado a executar um merge para junção de ramos.
+
+
+
+
+
+
+
+
+
+
+
+
+		
+			
